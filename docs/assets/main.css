@@ -32,12 +32,13 @@ img {
 .header-wrapper {
   margin-bottom: 2rem;
   background-color: var(--background-color);
+  padding: 0 1.5em;
   position: sticky;
   top: 0;
   z-index: 1;
 
   .header {
-    height: 75px;
+    height: 70px;
     display: flex;
     align-items: center;
 
@@ -50,7 +51,7 @@ img {
 
 
 .page-content {
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .blog-grid {
@@ -127,7 +128,8 @@ img {
 
   h2.title {
     font-size: 4.5em;
-    margin: 0;
+    line-height: 1.2;
+    margin: 0.2em 0;
   }
 
   p.excerpt {
