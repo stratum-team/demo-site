@@ -1,0 +1,13 @@
+baseurl: /demo-site
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      cover_image: "https://placecats.com/neo_banana/300/500"
+
+kramdown:
+  syntax_highlighter: rouge

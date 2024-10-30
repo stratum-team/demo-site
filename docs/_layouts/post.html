@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div class="container-thin post-content">
+  <div class="date">{{ page.date | date_to_long_string: "ordinal", "US" }}</div>
+  <h2 class="title">{{ page.title }}</h2>
+
+  {{ content }}
+</div>

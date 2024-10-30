@@ -2,11 +2,18 @@
 layout: home
 ---
 
-<ul>
+<div class="blog-grid">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
+    <a href="{{ post.url | relative_url }}" class="blog-post">
+      <div class="blog-post-inner">
+        <div class="image-cover"><img src="{{ post.cover_image }}"></div>
+        <div class="tags">
+
+        </div>
+        <div class="date">{{ post.date | date_to_long_string: "ordinal", "US" }} </div>
+        <h3>{{ post.title }}</h3>
+        {{ post.excerpt }}
+      </div>
+    </a>
   {% endfor %}
-</ul>
+</div>
