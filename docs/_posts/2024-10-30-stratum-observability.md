@@ -1,6 +1,6 @@
 After 12 years of coding for many organizations, I’ve finally found a path to clean, observable data. Here’s a high-level look at that journey—and how Stratum feels like finding the perfect resolution and frame rate for your soon-to-be favorite display.
 
-![Spectrum of observability](/assets/8.gif)
+![Spectrum of observability](/demo-site/assets/8.gif)
 
 ### 1. Acknowledging the Chaos
 
@@ -26,13 +26,13 @@ With data points being auto-generated for JavaScript errors and API calls, some 
 
 Wait, what do they really do, and how do they accomplish it? We’ve always had KPIs to understand the app’s intent (albeit unclearly), but these were driven by long-term reports. Such insights are useless for real-time deployment health or A/B testing across different user contexts. Since the original intent was to try to capture everything, there were long processing times, many failure points, and, most of all, auto-generated logs that were a disaster to understand and query. The complexity was pushed to the bottom end of the data flow.
 
-![Auto eventing illustrated with complex queries](/assets/3.png)
+![Auto eventing illustrated with complex queries](/demo-site/assets/3.png)
 
 This forced investment from each team to roll their own logging, metrics, and events. Each team innovated in a silo, giving themselves insights from "their side" of integrations. Velocity was no concern here. Rapid iteration on behind-the-scenes ideas and flashy rollouts across many teams.
 
 Teams often find themselves forced to create custom metrics, which work temporarily for them but rarely scale across contexts. They navigate an endless maze of inconsistent data, each team speaking its own language and paying the cost of that inconsistency later.
 
-![Custom events limiting confusion from auto eventing, but still driving cost/confusion upwards](/assets/4.png)
+![Custom events limiting confusion from auto eventing, but still driving cost/confusion upwards](/demo-site/assets/4.png)
 
 ### 3. Unconnected tissues, causing confusion
 
@@ -44,7 +44,7 @@ At a certain level, most people want simplicity, clear ownership, and a place to
 
 In the illustration above, notice how each stage of event handling—from auto metrics to custom metrics—reveals a gradual shift toward clarity. Each step represents a progression toward Stratum’s end goal: data simplicity at scale.
 
-![Stratum's catalogs standardizing at the time of creation](/assets/5.png)
+![Stratum's catalogs standardizing at the time of creation](/demo-site/assets/5.png)
 
 Each line of code has an opportunity to work in harmony with the last or redefine the future. Lacking boundaries for what best practice looks like at a code level, we’re left without real-time measures of success. How can we know that we’re emitting the correct event when the emission of that event is “fire and forget” (at best)?
 
