@@ -137,7 +137,8 @@ img {
   }
 }
 
+/** code highlighting **/
 .highlight {
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.1rem 0.5rem;
 }
