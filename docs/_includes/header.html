@@ -1,7 +1,15 @@
-<div class="header-wrapper">
-  <div class="container header">
-    <a href="{{ '/' | relative_url }}">
-      {%- include logo.html -%}
-    </a>
+<header>
+  <div class="container inner">
+    <div class="logo">
+      <a href="{{ '/' | relative_url }}">
+        {%- include logo.html -%}
+      </a>
+    </div>
+    <nav>
+      <button id="theme-toggle">
+        <img src="{{ '/assets/img/icons/sun.svg' | relative_url }}" class="icon-theme-dark">
+        <img src="{{ '/assets/img/icons/moon.svg' | relative_url }}" class="icon-theme-light">
+      </button>
+    </nav>
   </div>
-</div>
+</header>
