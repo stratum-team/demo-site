@@ -1,0 +1,21 @@
+{
+  "name": "stratum-observability-ghpages",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Script to set up stratum integration with stratum's ghpages",
+  "scripts": {
+    "build:clean": "rimraf dist",
+    "build:lib": "rollup -c",
+    "build": "npm run build:clean && npm run build:lib"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.24.3"
+  },
+  "dependencies": {
+    "@capitalone/stratum-observability": "^1.1.0"
+  }
+}

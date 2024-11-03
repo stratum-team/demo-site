@@ -9,7 +9,6 @@ const toggleTheme = () => {
 }
 
 const applyTheme = () => {
-  console.log('apply theme', currentTheme);
   document.documentElement.setAttribute('data-theme', currentTheme);
 }
 
@@ -22,3 +21,11 @@ applyTheme();
 
 const themeBtn = document.getElementById('theme-toggle');
 themeBtn.addEventListener('click', toggleTheme, false);
+
+// window.stratum_global = { listeners: [ (e) => console.log(e) ]};
+
+import('/demo-site/assets/stratum.js').then(({ stratumService, TagKey }) => {
+  const pageId = document.body.getAttribute('data-stratum-page-id');
+  const key = pageId ? TagKey.VIEW_POST : TagKey.VIEW_LISTING;
+  stratumService.publish(key, { replacements: { pageId } });
+});
